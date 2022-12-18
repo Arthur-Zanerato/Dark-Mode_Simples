@@ -1,0 +1,83 @@
+:root {
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+  --trono-img: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/trono-preto.png");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--cor-fundo);
+  color: var(--cor-fonte);
+  font-family: "Cinzel", serif;
+  font-size: 38px;
+  user-select: none;
+  transition: 2s;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.textop{
+  font-size: 24px;
+}
+
+.jf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trono {
+  background: var(--trono-img);
+  background-size: cover;
+  width: 450px;
+  height: 350px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 10%;
+  right: 15%;
+}
+
+.mudar-tema {
+  background: var(--label-icon);
+  padding: 24px;
+  height: 24px;
+  width: 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#btn {
+  display: none;
+}
+
+.dark-mode {
+  --cor-fundo: #000;
+  --cor-fonte: #fff;
+  --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+  --trono-img: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/trono-branco.png");
+}
+
+#texto{
+  text-align: center;
+  font-size: 45px;
+}
